@@ -43,3 +43,18 @@
 - Complete remaining Cat I STIG controls
 - Run SCAP compliance checker
 - Set up Splunk SIEM
+
+## Session 002 - March 15, 2026
+
+### Splunk SIEM Configuration
+- Installed Splunk Enterprise on host machine
+- Created wineventlog index
+- Installed Universal Forwarder on Windows Server 2019 VM
+- Configured inputs.conf to monitor Security, System and Application event logs
+- Configured outputs.conf pointing to 192.168.56.1:9997
+- Verified network connectivity between VM and Splunk (TcpTestSucceeded: True)
+- Troubleshot firewall rules and service configuration
+- Familiar with Splunk architecture and Universal Forwarder deployment
+
+### Status
+Log ingestion configuration completed. Troubleshooting ongoing.
