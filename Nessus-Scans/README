@@ -1,0 +1,52 @@
+Nessus Vulnerability Scans — Windows Server 2019
+Overview
+This folder contains vulnerability scan results from Tenable Nessus Essentials conducted against a Windows Server 2019 virtual machine in my cybersecurity home lab environment. The scans were performed using a Basic Network Scan policy with CVSS v3.0 severity scoring.
+A total of 5 scans were conducted between March 12 and March 15, 2026 to identify, remediate, and verify the resolution of security vulnerabilities consistent with DoD Risk Management Framework (RMF) continuous monitoring requirements.
+
+Scan 1 — Initial Assessment (March 12, 2026)
+File: Scan-1-Initial-March12.png
+Findings:
+
+1 Medium — SMB Signing Not Required (CVSS 5.3)
+1 Low — ICMP Timestamp Request Remote Date Disclosure (CVSS 2.1)
+18 Informational findings
+
+Summary: Initial baseline scan identified one Medium severity vulnerability related to SMB signing not being enforced which could allow an attacker to conduct man in the middle attacks against SMB traffic. Remediation was prioritized.
+
+Scan 5 — Post Remediation Verification (March 15, 2026)
+File: Scan-5-PostRemediation-March15.png
+Findings:
+
+0 Medium — SMB Signing finding successfully remediated ✅
+1 Low — ICMP Timestamp Request Remote Date Disclosure (residual — accepted risk)
+18 Informational findings
+
+Summary: Post remediation scan confirmed the Medium severity SMB Signing vulnerability was successfully resolved through Group Policy configuration. The remaining Low severity ICMP Timestamp finding was documented as an accepted risk in the POA&M.
+
+Scan History Overview
+File: Scan-History-Overview.png
+Summary: The history tab shows 5 completed scans across the assessment period demonstrating continuous monitoring practices consistent with RMF Step 6 — Monitor. Each scan was reviewed and findings were tracked and documented accordingly.
+
+Remediation Actions Taken
+FindingSeverityRemediationStatusSMB Signing Not RequiredMediumEnforced SMB signing via Group Policy✅ ResolvedICMP Timestamp DisclosureLowDocumented in POA&M as accepted risk📋 Accepted
+
+Tools Used
+
+Tenable Nessus Essentials
+Windows Server 2019 (VirtualBox)
+CVSS v3.0 Scoring
+DoD RMF Continuous Monitoring Methodolo
+
+POA&M Documentation
+A formal Plan of Action and Milestones (POA&M) was created for the ICMP Timestamp Request Remote Date Disclosure finding consistent with DoD RMF documentation requirements.
+POA&M Summary:
+
+Finding: ICMP Timestamp Request Remote Date Disclosure
+Severity: Low (CVSS 2.1)
+Status: Open — Accepted Risk
+Documentation: Full POA&M artifact available in the POAMs folder of this repository
+
+The POA&M documents the risk decision, planned mitigation actions, responsible party, and scheduled completion date consistent with continuous monitoring requirements under NIST SP 800-53 and DoD RMF guidelines.
+
+Then also update your Remediation table to reflect it:
+FindingSeverityRemediationStatusSMB Signing Not RequiredMediumEnforced SMB signing via Group Policy✅ ResolvedICMP Timestamp DisclosureLowPOA&M created — documented as accepted risk📋 POA&M Open
