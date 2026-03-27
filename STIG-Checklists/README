@@ -1,0 +1,21 @@
+STIG Checklists — Windows Server 2019
+Overview
+This folder contains DISA STIG Viewer checklist files (.ckl) generated during manual STIG compliance assessments conducted against a Windows Server 2019 virtual machine in my cybersecurity home lab.
+Assessments were performed using the official DISA STIG Viewer 3.7.0 tool against the DoD Windows Server 2019 STIG requirements evaluating Category I (CAT I) security controls consistent with DoD RMF methodology.
+Files
+
+Windows_Server_2019_STIG_Checklist.ckl — Initial STIG compliance assessment checklist documenting all evaluated controls, findings, and status
+Windows_Server_2019_STIG_Checklist_Updated.ckl — Updated checklist reflecting remediation actions taken and current compliance posture
+
+Key Findings
+
+Evaluated CAT I security controls for critical vulnerabilities
+Identified and documented non compliant controls
+Remediated findings including Windows Installer elevated privileges, anonymous share enumeration, and LAN Manager authentication weaknesses
+Updated checklist reflects improved compliance posture post remediation
+
+Tools Used
+
+DISA STIG Viewer 3.7.0
+DoD Windows Server 2019 STIG
+VirtualBox Windows Server 2019 Virtual Machine
