@@ -40,7 +40,7 @@
 - Documentation is just as important as technical work
 
 ## Next Steps
-- Complete remaining Cat I STIG controls
+- Complete remaining Cat II & III STIG controls
 - Run SCAP compliance checker
 - Set up Splunk SIEM
 
