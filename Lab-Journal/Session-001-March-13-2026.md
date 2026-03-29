@@ -18,7 +18,7 @@
 | Severity | Finding | Status |
 |----------|---------|--------|
 | Medium | SMB Signing Not Required | Remediated |
-| Low | ICMP Timestamp Disclosure | Open |
+| Low | ICMP Timestamp Disclosure | Closed |
 
 ## STIG Findings
 | V-Number | Title | Status |
